@@ -53,8 +53,8 @@ model:
         lossconfig:
           target: torch.nn.Identity
 
-      cond_stage_config:
-        target: ldm.modules.encoders.modules.FrozenCLIPEmbedder
+    cond_stage_config:
+      target: ldm.modules.encoders.modules.FrozenCLIPEmbedder
 
 data:
   target: main.DataModuleFromConfig
